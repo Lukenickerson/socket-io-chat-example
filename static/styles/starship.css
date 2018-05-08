@@ -1,0 +1,90 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #000;
+	font-family: sans-serif, monospace;
+	color: #eee;
+}
+
+h1 {
+	font-size: 150%;
+	margin: 0 0 1em 0;
+}
+
+#body {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	box-sizing: border-box;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	padding: 2%;
+}
+#body > * {
+	flex-grow: 1;
+}
+
+.crew-communication {
+	display: flex;
+	flex-direction: row;
+	border-radius: 1em;
+	background: rgba(240,240,255,0.6);
+	overflow: hidden;
+	max-height: 50%;
+}
+
+.crew {
+	flex-grow: 1;
+	padding: 1em;
+	min-width: 15%;
+}
+
+.chat {
+	flex-grow: 5;
+	border-bottom: 1px solid #666;
+	background: rgba(240,240,255,0.6);
+	color: #222;
+	position: relative;
+}
+	.chat h1 {
+		position: absolute;
+		right: 1em;
+		opacity: 0.3;
+	}
+	.chat-sender {
+		font-size: 70%;
+		font-weight: bold;
+		margin: 0.5em 0;
+	}
+	.chat-message {
+		margin-bottom: 0.5em;
+	}
+
+
+.input-output-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.input {
+	border: 1px solid rgba(100,100,100,0.5);
+	padding: 0.5em;
+	margin: 1em;
+}
+
+.output {
+	flex-grow: 1;
+	overflow: auto;
+	padding: 1em;
+}
+
+
+.console {
+	max-height: 0;
+	overflow: hidden;
+}

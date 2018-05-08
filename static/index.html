@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Starship Mud</title>
+	<link rel="stylesheet" type="text/css" href="static/styles/starship.css" />
+	<link rel="stylesheet" type="text/css" href="static/styles/fontawesome-free-5.0.12/fontawesome-all.css" />
+	<script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+<div id="body">
+	<div class="crew-communication">
+		<section class="crew">
+			<h1><i class="fa fa-address-book"></i> Crew</h1>
+			<ul id="crew-list">
+			</ul>
+		</section>
+		<section id="chat" class="chat input-output-container">
+			<div id="chat-output" class="output">
+				<h1>Chat <i class="fa fa-comments"></i></h1>
+			</div>
+			<form onsubmit="return false;">
+				<div id="chat-input" class="input" contenteditable="true" role="textbox" tabindex="2" spellcheck="true" autocorrect="off">
+
+				</div>
+				<!-- <button type="submit">submit</button> -->
+			</form>
+		</section>
+	</div>
+	<section id="world" class="world input-output-container">
+		<div id="world-output" class="output">
+		</div>
+		<form onsubmit="return false;">
+			<div id="world-input" class="input" contenteditable="true" role="textbox" tabindex="1" spellcheck="true" autocorrect="off">
+
+			</div>
+		</form>
+	</section>
+	<section id="console" class="console input-output-container">
+		<div id="console-output" class="output">
+		</div>
+		<form onsubmit="return false;">
+			<div id="console-input" class="input" contenteditable="true" role="textbox" tabindex="1" spellcheck="true" autocorrect="off">
+
+			</div>
+		</form>
+	</section>
+</div>
+</body>
+<script src="/static/scripts/game.js"></script>
+</html>
